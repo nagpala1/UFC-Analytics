@@ -1,0 +1,934 @@
+*{
+	padding:0;
+	margin:0;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color:#5987AF;
+}
+
+body {
+	background-image:url("bg3.jpg");
+	background-attachment:fixed;
+}
+
+#topBorder{
+	position:relative;
+	width:100%;
+	height:80px;
+	background-color:#E9E7E7;
+	top:0;
+	left:0;
+	border-top:15px solid #F0F0F0;
+	display:inline-block;
+	z-index:2;
+}
+
+#topBorder > h1{
+	position:absolute;
+	left:15px;
+	color:#5987AF;
+	top:25%;
+}
+
+#topBorder > h1 > a{
+	text-decoration:none;
+	color:#5987AF;
+	text-shadow:1px 1px #378CBD;
+}
+
+#topBorder > ul{
+	position:absolute;
+	list-style-type: none;
+	left:25%;
+}
+
+#topBorder > ul > li{
+	float:left;
+	font-size:1.5em;
+	width:200px;
+	height:75px;
+	text-align:center;
+	line-height:80px;
+}
+
+#topBorder > ul a{
+	text-decoration:none;
+	color:#5987AF;
+	display:block;
+}
+
+#topBorder ul a:hover{
+	background-color:white;
+}
+
+#topBorder > ul > li > ul{
+	list-style-type:none;
+	font-size:0.75em;
+	background-color:#E9E7E7;
+	line-height:40px;
+}
+
+#topBorder > ul > li > ul > li{
+	display:none;
+}
+
+
+#topBorder > ul > li:hover > ul > li{
+	display:block;
+	border:1px solid #5987AF;
+}
+
+#ufc{
+	position:relative;
+	width:100%;
+	height:50px;
+	bottom:10px;
+	z-index:1;
+}
+
+#ufc > h1{
+	text-align:center;
+	background-color:#DFDDDD;
+	border-bottom:5px solid #5987AF;
+	color:#5987AF;
+	text-shadow:1px 1px black;
+}
+
+@media screen and (max-width:1100px){
+	#topBorder > ul {
+		left:35%;
+	}
+	#topBorder > ul > li {
+		width:125px;
+		font-size:1em;
+	}
+	#image1{
+		left:20px;
+	}
+}
+
+@media screen and (max-width:790px){
+	#topBorder{
+		height:160px;
+	}
+	#topBorder > ul{
+		top:80px;
+		left:15%;
+	}
+	#image1{
+		width:500px;
+		height:333px;
+		border-radius:30px;
+	}
+}
+
+@media screen and (max-width:610px){
+	#topBorder > ul{
+		left:5%;
+	}
+	#image1{
+		left:10%;
+		width:80%;
+	}
+}
+
+@media screen and (max-width:545px){
+	#topBorder > ul{
+		left:1%;
+	}
+	#topBorder > ul > li{
+		width:100px;
+	}
+	#image1{
+		top:50px;
+	}
+}
+
+@media screen and (max-width:430px){
+	#topBorder > ul > li{
+		font-size:0.8em;
+		width:80px;
+	}
+}
+
+@media screen and (max-width:335px){
+	#topBorder > ul > li{
+		width:70px;
+		margin-left:4px;
+		font-size:0.7em;
+	}
+}
+
+@media screen and (max-width:310px){
+	#topBorder > ul > li{
+		width:60px;
+		font-size:0.6em;
+	}
+	#topBorder > h1{
+	left:5px;
+	font-size:1.5em;
+	}
+}
+
+@media screen and (max-width:260px){
+	#topBorder > ul > li{
+		width:40px;
+		font-size:0.5em;
+	}
+	#topBorder > h1{
+	left:1px;
+	font-size:1.2em;
+	}
+}
+
+
+/* --- */
+
+
+
+#container {
+	position:relative;
+	width:90%;
+	height:1850px;
+	left:5%;
+	border-right:5px solid #5987AF;
+	border-left:5px solid #5987AF;
+	border-radius:5px;
+}
+
+#container > #transparent{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background-color:#DFDDDD;
+	opacity:0.5;
+}
+
+#container > #images > ul > p{
+	line-height:30px;
+	margin:25px 0;
+	margin-right:0.6%;
+	text-align:center;
+	background-color: white;
+	border-top:2px solid #5987AF;
+}
+
+#container > #images > ul > p{
+	color:black;
+}
+
+#container >#images > ul > li > #imageBox > p {
+	padding:1px;
+}
+
+#container >#images > ul > li > #imageBox > p > span.record{
+	font-size:1.2em;
+	color:#1C72AC;
+	font-weight:bold;
+}
+
+#container > #images{
+	position:absolute;
+	opacity:0;
+	top:5px;
+	left:0.7%;
+	margin-right:1px;
+	margin-left:1px;
+}
+
+#container > #images > ul{
+	list-style-type: none;
+}
+
+#container > #images > ul > li {
+	position:relative;
+	width:33%;
+	height:400px;
+	float:left;
+	background-position: 50% 30%;
+	border-left:1px solid #5987AF;
+	border-bottom:2px solid #5987AF;
+	border-top:2px solid #5987AF;
+	border-radius:10px;
+}
+
+
+
+
+
+/* ----------- WFW CONTAINER ---------- */
+
+#containerwfw {
+	position:relative;
+	width:90%;
+	height:1000px;
+	left:5%;
+	border-right:5px solid #5987AF;
+	border-left:5px solid #5987AF;
+	border-radius:5pxpx;
+}
+
+#containerwfw > #transparent{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background-color:#DFDDDD;
+	opacity:0.5;
+}
+
+#containerwfw > #images > ul > p{
+	line-height:30px;
+	margin:25px 0;
+	margin-right:0.6%;
+	text-align:center;
+	background-color: white;
+	border-top:2px solid #5987AF;
+}
+
+#containerwfw > #images > ul > p{
+	color:black;
+}
+
+#containerwfw >#images > ul > li > #imageBox > p {
+	padding:1px;
+}
+
+#containerwfw >#images > ul > li > #imageBox > p > span.record{
+	font-size:1.2em;
+	color:#1C72AC;
+	font-weight:bold;
+}
+
+#containerwfw > #images{
+	position:absolute;
+	opacity:0;
+	top:5px;
+	left:0.7%;
+	margin-right:1px;
+	margin-left:1px;
+}
+
+#containerwfw > #images > ul{
+	list-style-type: none;
+}
+
+#containerwfw > #images > ul > li {
+	position:relative;
+	width:33%;
+	height:400px;
+	float:left;
+	background-position: 50% 30%;
+	border-left:1px solid #5987AF;
+	border-bottom:2px solid #5987AF;
+	border-top:2px solid #5987AF;
+	border-radius:10px;
+}
+
+/* ----------end of WFW container---------- */
+
+
+
+
+
+
+#container > #images > ul > li.first {
+	background-image:url("heavyweight/stipe1.jpg");
+}
+#container > #images > ul > li.second {
+	background-image:url("heavyweight/cain1.jpg");
+}
+#container > #images > ul > li.third {
+	background-image:url("heavyweight/werdum1.jpg");
+}
+#container > #images > ul > li.fourth {
+	background-image:url("heavyweight/alistair1.jpg");
+}
+#container > #images > ul > li.fifth {
+	background-image:url("heavyweight/junior1.jpg");
+}
+#container > #images > ul > li.sixth {
+	background-image:url("heavyweight/francis1.jpg");
+}
+#container > #images > ul > li.seventh {
+	background-image:url("heavyweight/lewis1.jpg");
+}
+#container > #images > ul > li.eighth {
+	background-image:url("heavyweight/hunt1.jpg");
+}
+#container > #images > ul > li.ninth {
+	background-image:url("heavyweight/arlovski.jpg");
+}
+#container > #images > ul > li.tenth {
+	background-image:url("heavyweight/browne1.jpg");
+	margin-left:33%;
+}
+
+#container > #images > ul > li.lhw1 {
+	background-image:url("lightheavyweight/cormier1.jpg");
+}
+#container > #images > ul > li.lhw2 {
+	background-image:url("lightheavyweight/jones1.jpg");
+}
+#container > #images > ul > li.lhw3 {
+	background-image:url("lightheavyweight/gustaffsson1.jpg");
+}
+#container > #images > ul > li.lhw4 {
+	background-image:url("lightheavyweight/manuwa1.jpg");
+}
+#container > #images > ul > li.lhw5 {
+	background-image:url("lightheavyweight/teixeira1.jpg");
+}
+#container > #images > ul > li.lhw6 {
+	background-image:url("lightheavyweight/hua1.jpg");
+}
+#container > #images > ul > li.lhw7 {
+	background-image:url("lightheavyweight/vulkan1.jpg");
+}
+#container > #images > ul > li.lhw8 {
+	background-image:url("lightheavyweight/anderson1.jpg");
+}
+#container > #images > ul > li.lhw9 {
+	background-image:url("lightheavyweight/preux1.jpg");
+}
+#container > #images > ul > li.lhw10 {
+	background-image:url("lightheavyweight/latifi1.jpg");
+	margin-left:33%;
+}
+
+#container > #images > ul > li.mw1 {
+	background-image:url("middleweight/bisping1.jpg");
+}
+#container > #images > ul > li.mw2 {
+	background-image:url("middleweight/romero1.png");
+}
+#container > #images > ul > li.mw3 {
+	background-image:url("middleweight/whittaker1.jpeg");
+}
+#container > #images > ul > li.mw4 {
+	background-image:url("middleweight/mousasi1.jpg");
+}
+#container > #images > ul > li.mw5 {
+	background-image:url("middleweight/rockhold1.jpg");
+}
+#container > #images > ul > li.mw6 {
+	background-image:url("middleweight/souza1.jpg");
+}
+#container > #images > ul > li.mw7 {
+	background-image:url("middleweight/weidman1.jpg");
+}
+#container > #images > ul > li.mw8 {
+	background-image:url("middleweight/gastelum1.jpg");
+}
+#container > #images > ul > li.mw9 {
+	background-image:url("middleweight/silva1.jpg");
+}
+#container > #images > ul > li.mw10 {
+	background-image:url("middleweight/brunson1.jpg");
+	margin-left:33%;
+}
+
+#container > #images > ul > li.ww1 {
+	background-image:url("welterweight/woodley1.png");
+}
+#container > #images > ul > li.ww2 {
+	background-image:url("welterweight/thompson.png");
+}
+#container > #images > ul > li.ww3 {
+	background-image:url("welterweight/maia.png");
+}
+#container > #images > ul > li.ww4 {
+	background-image:url("welterweight/lawler.jpg");
+}
+#container > #images > ul > li.ww5 {
+	background-image:url("welterweight/masvidal.png");
+}
+#container > #images > ul > li.ww6 {
+	background-image:url("welterweight/magny.jpg");
+}
+#container > #images > ul > li.ww7 {
+	background-image:url("welterweight/gastelum.jpg");
+}
+#container > #images > ul > li.ww8 {
+	background-image:url("welterweight/condit.jpg");
+}
+#container > #images > ul > li.ww9 {
+	background-image:url("welterweight/cerrone.jpg");
+}
+#container > #images > ul > li.ww10 {
+	background-image:url("welterweight/kim.jpg");
+	margin-left:33%;
+}
+
+#container > #images > ul > li.lw1 {
+	background-image:url("lightweight/mcgregor.jpg");
+}
+#container > #images > ul > li.lw2 {
+	background-image:url("lightweight/ferguson.jpg");
+}
+#container > #images > ul > li.lw3 {
+	background-image:url("lightweight/khabib.jpg");
+}
+#container > #images > ul > li.lw4 {
+	background-image:url("lightweight/barboza.jpg");
+}
+#container > #images > ul > li.lw5 {
+	background-image:url("lightweight/alvarez.jpg");
+}
+#container > #images > ul > li.lw6 {
+	background-image:url("lightweight/anjos.jpg");
+}
+#container > #images > ul > li.lw7 {
+	background-image:url("lightweight/diaz.jpg");
+}
+#container > #images > ul > li.lw8 {
+	background-image:url("lightweight/johnson.jpg");
+}
+#container > #images > ul > li.lw9 {
+	background-image:url("lightweight/chiesa.jpg");
+}
+#container > #images > ul > li.lw10 {
+	background-image:url("lightweight/poirier.jpg");
+	margin-left:33%;
+}
+
+#container > #images > ul > li.fw1 {
+	background-image:url("featherweight/holloway.jpg");
+}
+#container > #images > ul > li.fw2 {
+	background-image:url("featherweight/aldo.jpg");
+}
+#container > #images > ul > li.fw3 {
+	background-image:url("featherweight/edgar.jpg");
+}
+#container > #images > ul > li.fw4 {
+	background-image:url("featherweight/lamas.jpg");
+}
+#container > #images > ul > li.fw5 {
+	background-image:url("featherweight/swanson.jpg");
+}
+#container > #images > ul > li.fw6 {
+	background-image:url("featherweight/zombie.jpg");
+}
+#container > #images > ul > li.fw7 {
+	background-image:url("featherweight/pettis.jpg");
+}
+#container > #images > ul > li.fw8 {
+	background-image:url("featherweight/stephens.jpg");
+}
+#container > #images > ul > li.fw9 {
+	background-image:url("featherweight/rod.jpg");
+}
+#container > #images > ul > li.fw10 {
+	background-image:url("featherweight/ortega.jpg");
+	margin-left:33%;
+}
+
+#container > #images > ul > li.b1 {
+	background-image:url("bantamweight/garbrandt.jpg");
+}
+#container > #images > ul > li.b2 {
+	background-image:url("bantamweight/cruz.jpg");
+}
+#container > #images > ul > li.b3 {
+	background-image:url("bantamweight/dillashaw.jpg");
+}
+#container > #images > ul > li.b4 {
+	background-image:url("bantamweight/assuncao.jpg");
+}
+#container > #images > ul > li.b5 {
+	background-image:url("bantamweight/lineker.jpg");
+}
+#container > #images > ul > li.b6 {
+	background-image:url("bantamweight/rivera.jpg");
+}
+#container > #images > ul > li.b7 {
+	background-image:url("bantamweight/dodson.jpg");
+}
+#container > #images > ul > li.b8 {
+	background-image:url("bantamweight/caraway.jpg");
+}
+#container > #images > ul > li.b9 {
+	background-image:url("bantamweight/sterling.jpg");
+}
+#container > #images > ul > li.b10 {
+	background-image:url("bantamweight/almeida.jpg");
+	margin-left:33%;
+}
+
+#container > #images > ul > li.f1 {
+	background-image:url("flyweight/johnson.jpg");
+}
+#container > #images > ul > li.f2 {
+	background-image:url("flyweight/bena.jpg");
+}
+#container > #images > ul > li.f3 {
+	background-image:url("flyweight/cejudo.jpg");
+}
+#container > #images > ul > li.f4 {
+	background-image:url("flyweight/borg.jpg");
+}
+#container > #images > ul > li.f5 {
+	background-image:url("flyweight/reis.jpg");
+}
+#container > #images > ul > li.f6 {
+	background-image:url("flyweight/formiga.jpg");
+}
+#container > #images > ul > li.f7 {
+	background-image:url("flyweight/pettis.jpg");
+}
+#container > #images > ul > li.f8 {
+	background-image:url("flyweight/moreno.jpg");
+}
+#container > #images > ul > li.f9 {
+	background-image:url("flyweight/elliot.jpg");
+}
+#container > #images > ul > li.f10 {
+	background-image:url("flyweight/mccall.jpg");
+	margin-left:33%;
+}
+
+#container > #images > ul > li.wb1 {
+	background-image:url("wbantamweight/nunes.jpg");
+}
+#container > #images > ul > li.wb2 {
+	background-image:url("wbantamweight/shevchenko.jpg");
+}
+#container > #images > ul > li.wb3 {
+	background-image:url("wbantamweight/pena.jpg");
+}
+#container > #images > ul > li.wb4 {
+	background-image:url("wbantamweight/holm.jpg");
+}
+#container > #images > ul > li.wb5 {
+	background-image:url("wbantamweight/rousey.jpg");
+}
+#container > #images > ul > li.wb6 {
+	background-image:url("wbantamweight/pennington.jpg");
+}
+#container > #images > ul > li.wb7 {
+	background-image:url("wbantamweight/mcmann.jpg");
+}
+#container > #images > ul > li.wb8 {
+	background-image:url("wbantamweight/zingano.jpg");
+}
+#container > #images > ul > li.wb9 {
+	background-image:url("wbantamweight/carmouche.jpg");
+}
+#container > #images > ul > li.wb10 {
+	background-image:url("wbantamweight/davis.jpg");
+	margin-left:33%;
+}
+
+#container > #images > ul > li.ws1 {
+	background-image:url("wstrawweight/joanna.jpg");
+}
+#container > #images > ul > li.ws2 {
+	background-image:url("wstrawweight/gadelha.jpg");
+}
+#container > #images > ul > li.ws3 {
+	background-image:url("wstrawweight/karolina.jpg");
+}
+#container > #images > ul > li.ws4 {
+	background-image:url("wstrawweight/namajunas.jpg");
+}
+#container > #images > ul > li.ws5 {
+	background-image:url("wstrawweight/andrade.jpg");
+}
+#container > #images > ul > li.ws6 {
+	background-image:url("wstrawweight/torres.jpg");
+}
+#container > #images > ul > li.ws7 {
+	background-image:url("wstrawweight/waterson.jpg");
+}
+#container > #images > ul > li.ws8 {
+	background-image:url("wstrawweight/calderwood.jpg");
+}
+#container > #images > ul > li.ws9 {
+	background-image:url("wstrawweight/esparza.jpg");
+}
+#container > #images > ul > li.ws10 {
+	background-image:url("wstrawweight/markos.jpg");
+	margin-left:33%;
+}
+
+#containerwfw > #images > ul > li.wf1 {
+	background-image:url("wfeatherweight/randamie.jpg");
+}
+#containerwfw > #images > ul > li.wf2 {
+	background-image:url("wfeatherweight/cyborg.jpg");
+}
+#containerwfw > #images > ul > li.wf3 {
+	background-image:url("wfeatherweight/anderson.jpg");
+}
+#containerwfw > #images > ul > li.wf4 {
+	background-image:url("wfeatherweight/budd.jpg");
+}
+#containerwfw > #images > ul > li.wf5 {
+	background-image:url("wfeatherweight/holm.jpg");
+}
+#containerwfw > #images > ul > li.wf6 {
+	background-image:url("wfeatherweight/tweet.jpg");
+}
+
+#container > #images > ul > li > h2{
+	position:relative;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	background-color:#DFDDDD;
+	color:#2D729A;
+	padding-left:2px;
+}
+
+#container >#images > ul > li > #imageBox{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+}
+
+#container > #images > ul > li > #imageBox > p {
+	font-size:0.9em;
+	font-style:italic;
+	color:black;
+	position:absolute;
+	width:95%;
+	bottom:0;
+	background-color: white;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+
+
+
+
+
+/* ---------- WFW container */
+
+#containerwfw > #images > ul > li > h2{
+	position:relative;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	background-color:#DFDDDD;
+	color:#2D729A;
+}
+
+#containerwfw >#images > ul > li > #imageBox{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+}
+
+#containerwfw > #images > ul > li > #imageBox > p {
+	font-size:0.9em;
+	font-style:italic;
+	color:black;
+	position:absolute;
+	width:95%;
+	bottom:0;
+	background-color: white;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+
+/* ----------end of WFW container -----------*/
+
+
+
+
+
+
+@media screen and (max-width:900px){
+	#container{
+		height:1875px;
+	}
+}
+
+@media screen and (max-width:800px){
+	#container{
+		height:1925px;
+	}
+}
+
+@media screen and (max-width:850px){
+	#container > #images > ul > li > #imageBox > p {
+		font-size:0.8em;
+	}
+	#container > #images > ul > li > h2{
+		font-size:1.2em;
+		line-height:25px;
+	}
+}
+
+@media screen and (max-width:600px){
+	#container > #images > ul > li {
+		width:49.5%;
+	}
+	#container > #images{
+		left:0.4%;
+	}
+	#container > #images > ul > li.tenth {
+	margin:0;
+	}
+	#container > #images > ul > li.lhw10 {
+	margin:0;
+	}
+	#container > #images > ul > li.mw10 {
+	margin:0;
+	}
+	#container > #images > ul > li.ww10 {
+	margin:0;
+	}
+	#container > #images > ul > li.lw10 {
+	margin:0;
+	}
+	#container > #images > ul > li.fw10 {
+	margin:0;
+	}
+	#container > #images > ul > li.b10 {
+	margin:0;
+	}
+	#container > #images > ul > li.f10 {
+	margin:0;
+	}
+	#container > #images > ul > li.wb10 {
+	margin:0;
+	}
+	#container > #images > ul > li.ws10 {
+	margin:0;
+	}
+	#container{
+		height:2300px;
+	}
+}
+
+@media screen and (max-width:600px){
+	#container{
+		height:2350px;
+		left:2%;
+		width:94%;
+	}
+}
+@media screen and (max-width:500px){
+	#container{
+		height:2400px;
+	}
+	#container > #images > ul > li > #imageBox > p {
+		font-size:0.7em;
+		width:98%;
+	}
+}
+
+@media screen and (max-width:450px){
+	#container{
+		height:2500px;
+	}
+}
+
+@media screen and (max-width:400px){
+	#container{
+		height:2550px;
+		left:1%;
+		width:94.75%;
+	}
+}
+
+
+
+
+
+/*----------- WFW container queries -----------*/
+@media screen and (max-width:900px){
+	#containerwfw{
+		height:1100px;
+	}
+}
+
+@media screen and (max-width:800px){
+	#containerwfw{
+		height:1150px;
+	}
+}
+
+@media screen and (max-width:850px){
+	#containerwfw > #images > ul > li > #imageBox > p {
+		font-size:0.8em;
+	}
+	#containerwfw > #images > ul > li > h2{
+		font-size:1.2em;
+		line-height:25px;
+	}
+}
+
+@media screen and (max-width:600px){
+	#containerwfw > #images > ul > li {
+		width:49.5%;
+	}
+	#containerwfw > #images{
+		left:0.4%;
+	}
+	#containerwfw > #images > ul > li.tenth {
+	margin:0;
+	}
+	#containerwfw > #images > ul > li.lhw10 {
+	margin:0;
+	}
+	#containerwfw > #images > ul > li.mw10 {
+	margin:0;
+	}
+	#containerwfw > #images > ul > li.ww10 {
+	margin:0;
+	}
+	#containerwfw > #images > ul > li.lw10 {
+	margin:0;
+	}
+	#containerwfw > #images > ul > li.fw10 {
+	margin:0;
+	}
+	#containerwfw > #images > ul > li.b10 {
+	margin:0;
+	}
+	#containerwfw > #images > ul > li.f10 {
+	margin:0;
+	}
+	#containerwfw > #images > ul > li.wb10 {
+	margin:0;
+	}
+	#containerwfw > #images > ul > li.ws10 {
+	margin:0;
+	}
+	#containerwfw{
+		height:1500px;
+	}
+}
+
+@media screen and (max-width:600px){
+	#containerwfw{
+		height:1600px;
+		left:2%;
+		width:94%;
+	}
+}
+@media screen and (max-width:500px){
+	#containerwfw{
+		height:1700px;
+	}
+		#containerwfw > #images > ul > li > #imageBox > p {
+		font-size:0.7em;
+		width:98%;
+	}
+}
+
+@media screen and (max-width:450px){
+	#containerwfw{
+		height:1750px;
+	}
+}
+
+@media screen and (max-width:400px){
+	#containerwfw{
+		height:1800px;
+		left:1%;
+		width:94.75%;
+	}
+}
+/* -----------end of WFW container queries -----------*/

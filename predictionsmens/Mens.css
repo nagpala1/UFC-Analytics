@@ -1,0 +1,347 @@
+*{
+	padding:0;
+	margin:0;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+html, body{
+	height:100%;
+}
+body {
+	background-image:url("../bg3.jpg");
+	background-attachment:fixed;
+
+
+}
+
+#topBorder{
+	position:relative;
+	width:100%;
+	height:80px;
+	background-color:#E9E7E7;
+	top:0;
+	left:0;
+	border-top:15px solid #F0F0F0;
+	display:inline-block;
+	z-index:2;
+}
+
+#topBorder > h1{
+	position:absolute;
+	left:15px;
+	color:#5987AF;
+	top:25%;
+}
+
+#topBorder > h1 > a{
+	text-decoration:none;
+	color:#5987AF;
+	text-shadow:1px 1px #378CBD;
+}
+
+#topBorder > ul{
+	position:absolute;
+	list-style-type: none;
+	left:25%;
+}
+
+#topBorder > ul > li{
+	float:left;
+	font-size:1.5em;
+	width:200px;
+	height:75px;
+	text-align:center;
+	line-height:80px;
+}
+
+#topBorder > ul a{
+	text-decoration:none;
+	color:#5987AF;
+	display:block;
+}
+
+#topBorder ul a:hover{
+	background-color:white;
+}
+
+#topBorder > ul > li > ul{
+	list-style-type:none;
+	font-size:0.75em;
+	background-color:#E9E7E7;
+	line-height:40px;
+}
+
+#topBorder > ul > li > ul > li{
+	display:none;
+}
+
+
+#topBorder > ul > li:hover > ul > li{
+	display:block;
+	border:1px solid #5987AF;
+}
+
+
+/* REST */ 
+
+
+#ufc{
+	position:relative;
+	width:100%;
+	height:50px;
+	bottom:10px;
+	z-index:1;
+	color:#5987AF;
+}
+
+#ufc > h1{
+	text-align:center;
+	background-color:#DFDDDD;
+	border-bottom:5px solid #5987AF;
+	text-shadow:1px 1px black;
+}
+
+
+/*
+#full{
+	position:fixed;
+	background-color:blue;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	opacity:0.1;
+	overflow-x: hidden;
+   	overflow-y: auto;
+}
+*/
+
+
+
+#container{
+	position:relative;
+	width:90%;
+	margin-left:4.75%;
+	margin-right:5%;
+	min-height:100%;
+}
+
+#container > #transparent{
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin-left:4.5%;
+	margin-right:5%;
+	background-color:#DFDDDD;
+	opacity:0.5;
+	overflow-y:auto;
+	overflow-x: hidden;
+}
+
+#container > #transparentBorder{
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin-left:4.5%;
+	margin-right:5%;
+	overflow-y:auto;
+	overflow-x: hidden;
+	border-left:5px solid #5987AF;
+	border-right:5px solid #5987AF;
+	border-radius:5px;
+}
+
+#container > #wrapper{
+	position:absolute;
+	opacity:0;
+}
+#container > #wrapper > ul{
+	list-style-type:none;
+}
+
+#container > #wrapper > ul > p{
+	position:relative;
+	background-color:white;
+	margin:25px 1%;
+	line-height:30px;
+	text-align:center;
+	border-top:2px solid #5987AF;
+}
+
+#container #wrapper > ul > li{
+	width:90%;
+	margin-left:5%;
+	margin-right:5%;
+	margin-top:10px;
+	border:2px solid #5987AF;
+}
+
+#container #wrapper > ul > li > ul{
+	list-style-type:none;
+}
+#container #wrapper > ul > li > ul > h3{
+	color:#5987AF;
+	text-align:center;
+	background-color:#DFDDDD;
+}
+#container #wrapper > ul > li > ul > p{
+	color:black;
+	text-align:center;
+	background-color:white;
+	font-style:italic;
+}
+
+#container #wrapper > ul > li > ul > p > span{
+	font-weight:bold;
+}
+#container #wrapper > ul > li > ul > li{
+	width:50%;
+	height:400px;
+	float:left;
+}
+
+#container #wrapper > ul > li > ul > li.first{
+	background-image:url("lewis.jpg");
+	background-position:center;
+}
+#container #wrapper > ul > li > ul > li.second{
+	background-image:url("hunt.jpg");
+	background-position:center;
+}
+
+#container #wrapper > ul > li > ul > li.third{
+	background-image:url("romero.jpg");
+	background-position:center;
+}
+#container #wrapper > ul > li > ul > li.fourth{
+	background-image:url("whittaker.jpg");
+	background-position:center;
+}
+
+#container #wrapper > ul > li > ul > li.fifth{
+	background-image:url("lawler.jpg");
+	background-position:center;
+}
+#container #wrapper > ul > li > ul > li.sixth{
+	background-image:url("cerrone.jpg");
+	background-position:center;
+}
+
+#container #wrapper > ul > li > ul > li.seventh{
+	background-image:url("werdum.jpg");
+	background-position:center;
+}
+#container #wrapper > ul > li > ul > li.eighth{
+	background-image:url("overeem.jpg");
+	background-position:center;
+}
+
+#container #wrapper > ul > li > ul > li.nineth{
+	background-image:url("weidman.jpg");
+	background-position:center;
+}
+#container #wrapper > ul > li > ul > li.tenth{
+	background-image:url("gastelum.jpg");
+	background-position:center;
+}
+
+#container #wrapper > ul > li > ul > li.b1{
+	background-image:url("cormier.jpg");
+	background-position:center;
+}
+#container #wrapper > ul > li > ul > li.b2{
+	background-image:url("jones.jpg");
+	background-position:center;
+}
+
+@media screen and (max-width:1100px){
+	#topBorder > ul {
+		left:35%;
+	}
+	#topBorder > ul > li {
+		width:125px;
+		font-size:1em;
+	}
+}
+
+@media screen and (max-width:790px){
+	#topBorder{
+		height:160px;
+	}
+	#topBorder > ul{
+		top:80px;
+		left:15%;
+	}
+}
+
+@media screen and (max-width:610px){
+	#topBorder > ul{
+		left:5%;
+	}
+	#container{
+		margin:0;
+		left:2%;
+		width:96%;
+	}
+	#container > #transparent{
+		margin:0;
+		left:2%;
+		width:96%;
+	}
+	#container > #transparentBorder{
+		margin-left:2%;
+		margin-right:2%;
+	}
+	#container #wrapper > ul > li{
+		margin-left:4.25%;
+}
+
+@media screen and (max-width:545px){
+	#topBorder > ul{
+		left:1%;
+	}
+	#topBorder > ul > li{
+		width:100px;
+	}
+}
+
+@media screen and (max-width:430px){
+	#topBorder > ul > li{
+		font-size:0.8em;
+		width:80px;
+	}
+}
+
+@media screen and (max-width:335px){
+	#topBorder > ul > li{
+		width:70px;
+		margin-left:4px;
+		font-size:0.7em;
+	}
+}
+
+@media screen and (max-width:310px){
+	#topBorder > ul > li{
+		width:60px;
+		font-size:0.6em;
+	}
+	#topBorder > h1{
+	left:5px;
+	font-size:1.5em;
+	}
+}
+
+@media screen and (max-width:260px){
+	#topBorder > ul > li{
+		width:40px;
+		font-size:0.5em;
+	}
+	#topBorder > h1{
+	left:1px;
+	font-size:1.2em;
+	}
+}

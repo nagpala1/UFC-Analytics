@@ -1,0 +1,45 @@
+#container{
+	position:relative;
+	width:90%;
+	height:600px;
+	background-color:silver;
+	margin-left:5%;
+}
+
+#container > #image{
+	position:relative;
+	width:50%;
+	height:600px;
+	background-image:url("me.jpg");
+	background-position:20% 12%;
+}
+
+#container > p{
+	position:absolute;
+	top: 20px;
+	margin-left:52%;
+	background-color:white;
+	width:46%;
+}
+
+#container > fieldset{
+	position:absolute;
+	margin-left:51%;
+	width:38%;
+	top: 180px;
+}
+
+#container > fieldset > legend{
+	text-align:center;
+}
+
+#container > fieldset > label > input{
+	margin-bottom:20px;
+	width:75%;
+}
+
+#container > fieldset > label > textarea{
+	width:75%;
+	height:200px;
+
+}
